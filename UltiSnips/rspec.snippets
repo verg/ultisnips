@@ -43,7 +43,7 @@ end
 endsnippet
 
 snippet desc "controller_context"
-require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
+require 'spec_helper'
 
 describe ${1:controller} do
   $0
@@ -75,7 +75,7 @@ end
 endsnippet
 
 snippet ex "exactly" w
-exactly(${1:n}).times
+expect($0).to 
 endsnippet
 
 # TODO: the middle tabstop on these next two should be $0, but UltiSnips
